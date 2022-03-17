@@ -10,6 +10,7 @@ You can use a chrome-based browser and beta.pybricks.com to upload the code to t
 * 42099 LEGO Technic Control+ 4X4 X-treme Off-Roader
 * 42109 LEGO Technic Control+ App-Controlled Top Gear Rally Car
 * 42124 LEGO Technic Control+ Off-Road Buggy
+* 42140 LEGO Technic Control+ App-Controlled Transformation Vehicle
 
 ### External (Someone else wrote a program):
 * 42131 LEGO Technic Control+ App-Controlled Cat® D11 Bulldozer
@@ -20,7 +21,6 @@ https://github.com/repkovsky/technic/tree/main/42114-volvo-articulated-hauler
 ### Experimental (I don't own this set so I can't test it properly. Please provide feedback):
 * 42100 LEGO Technic Control+ Liebherr R 9800 Excavator (you need 2 remotes; one per hub)
 * 42129 LEGO Technic Control+ 4x4 Mercedes-Benz Zetros Trial Truck
-* 42140 LEGO Technic Control+ App-Controlled Transformation Vehicle (thanks to unbrickme for information on motor configuration)
 
 ### Not supported (these sets can connect directly to the remote. No custom program required):
 * 60197 LEGO City Passenger Train
