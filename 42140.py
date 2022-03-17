@@ -4,6 +4,9 @@ from pybricks.pupdevices import *
 from pybricks.parameters import *
 from pybricks.tools import wait
 
+#Thanks to unbrickme for supplying the port configuration
+#Thanks to profinerd for testing
+
 hub = TechnicHub()
 motor1 = Motor(Port.B)
 motor2 = Motor(Port.A)
@@ -54,7 +57,8 @@ while True:
         
     else:
         hub.light.on(Color.YELLOW)
-        motor1.brake()
-        motor2.brake()
+        if (Button.LEFT_PLUS not in pressed) and (Button.LEFT_MINUS not in pressed) and (Button.RIGHT_PLUS not in pressed) and (Button.RIGHT_MINUS not in pressed):
+            motor1.brake()
+            motor2.brake()
 
     wait(100)
