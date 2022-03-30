@@ -1,4 +1,3 @@
-
 from pybricks.hubs import TechnicHub
 from pybricks.pupdevices import *
 from pybricks.parameters import *
@@ -23,8 +22,9 @@ while True:
     #commands to drive forwards or backwards
     #they depend on the orientation of the hub
     #for one side, motors are reversed and switched
-    if hubOrientation == Side.TOP:
-        hub.light.on(Color.RED)
+    if hubOrientation == Side.BOTTOM:
+        hub.light.on(Color.ORANGE)
+        remoteControl.light.on(Color.ORANGE)
         if Button.LEFT_PLUS in pressed:
             motor2.dc(100)
         elif Button.LEFT_MINUS in pressed:
@@ -39,8 +39,9 @@ while True:
         else:
             motor1.brake()
 
-    elif hubOrientation == Side.BOTTOM:
-        hub.light.on(Color.GREEN)
+    elif hubOrientation == Side.TOP:
+        hub.light.on(Color.BLUE)
+        remoteControl.light.on(Color.BLUE)
         if Button.LEFT_PLUS in pressed:
             motor1.dc(100)
         elif Button.LEFT_MINUS in pressed:
@@ -54,11 +55,16 @@ while True:
             motor2.dc(100)
         else:
             motor2.brake()
-        
+    
+    #Continue to drive if buttons are still pressed (to complete rolling over)
+    #but stop the motors otherwise
     else:
-        hub.light.on(Color.YELLOW)
         if (Button.LEFT_PLUS not in pressed) and (Button.LEFT_MINUS not in pressed) and (Button.RIGHT_PLUS not in pressed) and (Button.RIGHT_MINUS not in pressed):
             motor1.brake()
             motor2.brake()
+
+    #Turn the hub off. Shamelessly copied from profinerd
+    if (Button.CENTER in pressed):
+        hub.system.shutdown()
 
     wait(100)
