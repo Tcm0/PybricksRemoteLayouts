@@ -17,6 +17,8 @@ You can use a chrome-based browser and beta.pybricks.com to upload the code to t
 https://www.eurobricks.com/forum/index.php?/forums/topic/182012-42131-cat-d11-bulldozer/&page=46&tab=comments#comment-3455837
 * 42114 LEGO Technic Control+ 6x6 Volvo Articulated Hauler
 https://github.com/repkovsky/technic/tree/main/42114-volvo-articulated-hauler
+* 42146 LEGO Technic Control+ Liebherr Crawler Crane LR 13000
+https://github.com/orgs/pybricks/discussions/1259
 
 ### Experimental (I don't own this set so I can't test it properly. Please provide feedback):
 * 42100 LEGO Technic Control+ Liebherr R 9800 Excavator (you need 2 remotes; one per hub)
