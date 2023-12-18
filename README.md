@@ -23,6 +23,7 @@ https://github.com/orgs/pybricks/discussions/1259
 ### Experimental (I don't own this set so I can't test it properly. Please provide feedback):
 * 42100 LEGO Technic Control+ Liebherr R 9800 Excavator (you need 2 remotes; one per hub)
 * 42129 LEGO Technic Control+ 4x4 Mercedes-Benz Zetros Trial Truck
+* 42160 LEGO Technic Control+ Audi RS Q e-tron
 
 ### Not supported (these sets can connect directly to the remote. No custom program required):
 * 60197 LEGO City Passenger Train
