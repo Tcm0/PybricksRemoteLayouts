@@ -38,10 +38,10 @@ while True:
 
     #commands to steer
     if Button.RIGHT_PLUS in pressed:
-        steering.track_target(1200, (maxAngle/2)-5, Stop.HOLD,False)
+        steering.track_target((maxAngle/2)-5)
     elif Button.RIGHT_MINUS in pressed:
-        steering.track_target(1200, -((maxAngle/2)-5), Stop.HOLD,False)
+        steering.track_target(-((maxAngle/2)-5))
     else:
-        steering.track_target(1200, 0, Stop.HOLD, False)
+        steering.track_target(0)
 
     wait(100)
